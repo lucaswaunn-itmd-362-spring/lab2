@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2f2f2f;
+    overflow-y: auto;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 20px auto;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+label {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+      overflow: hidden;
+  }
+
+  .form-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+  }
+
+}
